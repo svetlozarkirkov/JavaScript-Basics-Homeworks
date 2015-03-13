@@ -1,2 +1,2 @@
-var time = new Date();
+var time = new Date().toUTCString();
 console.log(time);
