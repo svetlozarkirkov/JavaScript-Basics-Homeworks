@@ -4,5 +4,3 @@ function convertToKnots(kmh) {
     result = result.toFixed(2);
     console.log("knots = " + result);
 }
-
-/* run this function in browser */
