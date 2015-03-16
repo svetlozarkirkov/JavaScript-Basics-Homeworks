@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculate Expression</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="calcExpression.js"></script>
 </head>
 <body>
-
+    <div class="wrapper" id="box">
+        <input type="text" class="input-field" id="inputBox">
+        <button type="submit" class="evaluate-button" id="evalButton" onclick="evaluateAndPrint()">
+            Eval result
+        </button>
+        <p class="result-box" id="resultBox"></p>
+    </div>
 </body>
 </html>
