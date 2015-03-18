@@ -6,23 +6,23 @@ function manipulate(arr) {
     }
 
     function mostOccurring(arr) {
-        var mf = 1;
-        var m = 0;
+        var biggestCount = 1;
+        var currentCount = 0;
         var item;
         for (var i = 0; i < arr.length; i++)
         {
             for (var j = i; j < arr.length; j++)
             {
                 if (arr[i] === arr[j]) {
-                    m++;
+                    currentCount++;
                 }
-                if (mf < m)
+                if (biggestCount < currentCount)
                 {
-                    mf = m;
+                    biggestCount = currentCount;
                     item = arr[i];
                 }
             }
-            m = 0;
+            currentCount = 0;
         }
         return item;
     }
@@ -35,10 +35,16 @@ function manipulate(arr) {
         }
     }
     
-    filtered.sort(function(a, b){return b-a;});
+    filtered.sort(function(a, b) {
+        return b - a;
+    });
+    
     var min = Math.min.apply(null, filtered);
     var max = Math.max.apply(null, filtered);
     var mostFreq = mostOccurring(filtered);
+    if (mostFreq === undefined) {
+        mostFreq = 'none';
+    }
     console.log('Min number: ' + min);
     console.log('Max number: ' + max);
     console.log('Most frequent number: ' + mostFreq);
