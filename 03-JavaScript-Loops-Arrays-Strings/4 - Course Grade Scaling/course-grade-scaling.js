@@ -14,11 +14,15 @@ function gradeScaling(input) {
         return item.hasPassed;
     });
     filtered.sort(function compare(a,b) {
-        if (a.name < b.name)
+        if (a.name < b.name) {
             return -1;
-        if (a.name > b.name)
+        }
+        else if (a.name > b.name) {
             return 1;
-        return 0;
+        }
+        else {
+            return 0;
+        }
     });
     for (var x in filtered) {
         console.log(filtered[x]);
