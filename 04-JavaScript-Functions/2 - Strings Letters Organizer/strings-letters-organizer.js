@@ -1,7 +1,6 @@
 "use strict";
 function sortLetters(string, boolean) {
     var split = string.split('');
-    console.log(split);
     var result;
     if (boolean === true) {
         split.sort(function (a, b) {
