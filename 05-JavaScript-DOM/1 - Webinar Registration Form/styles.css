@@ -1,0 +1,67 @@
+body {
+
+}
+
+h1 {
+    font-size: 20px;
+    font-family: calibri, helvetica, arial;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+form {
+    font-family: calibri, helvetica, arial;
+    font-weight: normal;
+    background-color: #FAF0E6;
+    /*border: 1px solid black;*/
+    width: 25%;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.5px 0.5px 2px black;
+}
+
+form label, form input {
+    margin-left: 75px;
+    width: 55%;
+}
+
+.required-star {
+    color: red;
+    font-size: 14px;
+}
+
+.invoice-checkbox {
+    margin-left: 80px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.invoice-section {
+    display:none;
+}
+
+.invoice-label {
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.invoice-checkbox, .invoice-label {
+    width: auto;
+}
+
+.bottom-buttons {
+    position: absolute;
+    top: 595px;
+}
+
+button {
+    height: 25px;
+    width: 80px;
+}
+
+#registerBtn {
+    margin-left: 65px;
+    width: 130px;
+}
